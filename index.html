@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bubble Sort Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Bubble Sort Visualizer</h1>
+
+    <div class="controls">
+      <input
+        type="text"
+        id="userArray"
+        placeholder="Enter numbers e.g 5,3,8,1"
+      />
+      <button onclick="generateArray()">Generate</button>
+      <button onclick="bubbleSort()">Sort</button>
+      <br />
+      Speed: <input type="range" id="speed" min="100" max="1000" value="400" />
+    </div>
+
+    <div id="array"></div>
+
+    <div class="info">
+      <p>Comparisons: <span id="comparisons">0</span></p>
+      <p>Swaps: <span id="swaps">0</span></p>
+      <hr />
+      <p><b>Best Case:</b> O(n)</p>
+      <p><b>Average Case:</b> O(n²)</p>
+      <p><b>Worst Case:</b> O(n²)</p>
+      <p><b>Space Complexity:</b> O(1)</p>
+      <p><b>Stable:</b> Yes</p>
+      <p><b>In-Place:</b> Yes</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
